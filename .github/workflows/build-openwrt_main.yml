@@ -45,8 +45,6 @@ env:
   SOURCE: lede
   TZ: Asia/Shanghai
   APP_CONFIG: configs/app.config
-  WEB_BRANCH: web
-  WEB_PATH: ${{ github.workspace }}/web
 
 jobs:
   generate-matrix:
@@ -272,7 +270,8 @@ jobs:
                 "TOOLCHAIN_TAG": "${{env.TOOLCHAIN_TAG}}",
                 "APP_CONFIG": "${{env.APP_CONFIG}}",
                 "ssh": "${{env.ssh}}",
-                "ssh_quick": "${{env.ssh_quick}}"
+                "ssh_quick": "${{env.ssh_quick}}",
+                "SOURCE_URL": "${{env.SOURCE_URL}}"
 
               }
             }

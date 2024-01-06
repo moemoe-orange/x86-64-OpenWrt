@@ -63,10 +63,6 @@ jobs:
       #     client-payload: |-
       #       {
       #         "variables": {
-      #           "OPENWRT_PATH": "${{env.OPENWRT_PATH }}",
-      #           "CURRENT_BRANCH": "${{env.CURRENT_BRANCH }}",
-      #           "SOURCE_REPO": "${{env.SOURCE_REPO }}",
-      #           "DEVICE": "${{ env.DEVICE }}"
       #         }
       #       }
 
