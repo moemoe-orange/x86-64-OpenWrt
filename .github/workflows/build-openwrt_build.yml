@@ -25,6 +25,7 @@ jobs:
       APP_CONFIG: ${{github.event.client_payload.variables.APP_CONFIG}}
       ssh: ${{github.event.client_payload.variables.ssh}}
       ssh_quick: ${{github.event.client_payload.variables.ssh_quick}}
+      SOURCE_URL: ${{github.event.client_payload.variables.SOURCE_URL}}
 
     steps:
       - name: 生成变量
